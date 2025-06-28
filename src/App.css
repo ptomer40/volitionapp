@@ -1,0 +1,164 @@
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+    .no-gutters > .col,
+    .no-gutters > [class*='col-'] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+.image-slide-row {
+    margin-top: 70px; /* Adjust this margin based on your header height */
+}
+/* Additional styles */
+.menu-collapse {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    background-color: white;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-100%);
+}
+
+.menu-open {
+    transform: translateY(0);
+    opacity: 1;
+    top: calc(56px + 3rem);
+}
+
+.menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-open + .menu-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (min-width: 768px) {
+    .menu-collapse {
+        display: block !important;
+        position: static;
+        transform: translateY(0);
+        overflow-y: visible;
+    }
+}
+
+.NavDropdown {
+    background-color: darkorange;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+    .search-bar i {
+        margin-right: 8px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        outline: none;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #f0f0f0;
+        border: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+    }
+
+.navbar-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    /* Adjust as needed */
+}
+
+.App {
+    text-align: center;
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.loginButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .loginButton:hover {
+        background-color: #45a049;
+    }
+
+.search-bar {
+    padding: 10px 20px;
+}
+
+.staffing-process-container {
+    margin-top: 110px;
+}
+
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 3px;
+    padding: 10px 0;
+}
+
+.step {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+    .step img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+.row3 {
+    height: 400px;
+    background-color: white;
+}

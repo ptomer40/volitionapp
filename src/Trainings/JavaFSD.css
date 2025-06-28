@@ -1,0 +1,91 @@
+﻿/* JavaFSD.css */
+
+.toc-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+    .toc-container h1 {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        border-bottom: 2px solid #007BFF;
+        padding-bottom: 10px;
+    }
+
+    .toc-container ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .toc-container ul > li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+            .toc-container ul > li > ul {
+                margin-top: 10px;
+                margin-left: 20px;
+                list-style-type: disc;
+            }
+
+    .toc-container li strong {
+        font-size: 1.2em;
+        color: #007BFF;
+    }
+
+    .toc-container li ul li {
+        margin-bottom: 5px;
+        font-size: 1em;
+        color: #555;
+    }
+
+        .toc-container li ul li:hover {
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        .toc-container li ul li::marker {
+            color: #007BFF;
+        }
+
+        .toc-container li ul li ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+
+@media (max-width: 767px) {
+    .toc-container {
+        padding: 15px;
+    }
+
+        .toc-container h1 {
+            font-size: 1.5em;
+        }
+
+        .toc-container li strong {
+            font-size: 1em;
+        }
+
+        .toc-container li ul li {
+            font-size: 0.9em;
+        }
+}
+.back-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .back-button:hover {
+        background-color: #45a049;
+    }

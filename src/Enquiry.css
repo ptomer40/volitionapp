@@ -1,0 +1,37 @@
+.enquiry {
+    padding: 6px;
+    background-color: forestgreen;
+    color:whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .enquiry h3 {
+        margin-bottom: 15px;
+    }
+
+    .enquiry p {
+        margin: 4px 0;
+        font-size: 20px;
+    }
+.animate {
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.1);
+        color: coral;
+    }
+
+    50% {
+        transform: scale(1.1);
+        color: coral;
+    }
+
+    100% {
+        transform: scale(1);
+        color: coral;
+    }
+}

@@ -1,0 +1,40 @@
+﻿/* AboutUs.css */
+.about-us-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.about-us-title {
+    color: orangered;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-us-content {
+    margin-top: 50px;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .about-us-title {
+        font-size: 2rem;
+    }
+
+    .about-us-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-us-title {
+        font-size: 1.75rem;
+    }
+
+    .about-us-content {
+        font-size: 0.9rem;
+    }
+}

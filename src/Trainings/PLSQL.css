@@ -1,0 +1,44 @@
+﻿.plsql-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+    .plsql-container h2 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .plsql-container ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .plsql-container li {
+        margin-bottom: 10px;
+    }
+
+    .plsql-container h3 {
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .plsql-container ul ul {
+        margin-left: 20px;
+    }
+
+        .plsql-container ul ul li {
+            margin-bottom: 5px;
+        }
+.back-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .back-button:hover {
+        background-color: #45a049;
+    }

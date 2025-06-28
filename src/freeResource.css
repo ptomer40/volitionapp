@@ -1,0 +1,75 @@
+.resource-section {
+  padding: 3rem 1.5rem;
+  background-color: #f1f5f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.resource-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resource-header h2 {
+  font-size: 2rem;
+  color: #1e293b;
+}
+
+.resource-header p {
+  font-size: 1rem;
+  color: #475569;
+  margin-top: 0.5rem;
+}
+
+.resource-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.resource-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.resource-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.resource-card h3 {
+  font-size: 1.2rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.resource-card p {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.explore-btn-wrapper {
+  text-align: center;
+}
+
+.btn-explore {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-explore:hover {
+  background-color: #0284c7;
+}

@@ -1,0 +1,40 @@
+﻿.footer-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.footer-divider {
+    border-top: 1px solid white;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.footer-address {
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+    .footer-address address {
+        margin-bottom: 20px;
+    }
+
+    .footer-address h3 {
+        color: white;
+    }
+
+    .footer-address br {
+        display: block;
+        margin: 5px 0;
+    }
+
+@media (max-width: 768px) {
+    .footer-address {
+        padding: 10px;
+    }
+}

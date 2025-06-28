@@ -1,0 +1,46 @@
+﻿.oracle-sql-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+    .oracle-sql-container h2 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .oracle-sql-container ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .oracle-sql-container li {
+        margin-bottom: 10px;
+    }
+
+    .oracle-sql-container h3 {
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .oracle-sql-container ul ul {
+        margin-left: 20px;
+    }
+
+        .oracle-sql-container ul ul li {
+            margin-bottom: 5px;
+        }
+
+
+.back-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .back-button:hover {
+        background-color: #45a049;
+    }

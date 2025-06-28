@@ -1,0 +1,150 @@
+﻿/* Navbar.css */
+
+.navbar-custom {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-scrolled {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+.btn-parrot {
+    background-color: #3ddc84; /* Parrot green shade */
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-parrot:hover {
+    background-color: #32c173; /* Slightly darker on hover */
+    color: white;
+}
+
+
+.navbar-logo {
+    width: 30px;
+    height: 30px;
+    transition: width 0.3s ease;
+}
+.login-signup .nav-link {
+    margin-left: 10px;
+}
+
+
+.navbar-custom h6 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: font-size 0.3s ease;
+}
+
+.menu-collapse {
+    justify-content: flex-end;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+
+
+    .navbar-scrolled .navbar-logo {
+        width: 40px;
+    }
+
+    .navbar-scrolled h6 {
+        font-size: 0.9rem;
+    }
+
+.nav-link-custom {
+    margin-right: 15px;
+    font-weight: 500;
+    color: #333 !important;
+}
+
+    .nav-link-custom:hover {
+        color: lightgreen !important;
+        text-decoration: none;
+    }
+
+    .nav-link-custom:focus,
+    .nav-link-custom:active {
+        color: lightgreen !important;
+        text-decoration: none;
+    }
+
+.nav-link-home {
+    color: #4CAF50 !important;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.navbar-scrolled {
+    background-color: #ffffff; /* Add background color when scrolled */
+}
+
+.menu-collapse {
+    transition: max-height 0.5s ease-in-out;
+}
+
+.attractive-link {
+  color: #ffffff;
+  background-color: #ff5733; /* Eye-catching background */
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.attractive-link:hover {
+  background-color: #e64a19;
+  
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.attractive-link {
+  animation: pulse 2s infinite;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .menu-collapse {
+        position: absolute;
+        top: 280px; /* Adjust this based on your navbar height */
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 1000;
+        border-top: 1px solid #ddd;
+        padding: 0 15px;
+    }
+
+    .menu-open {
+        display: block !important;
+        max-height: 100vh !important;
+        visibility: visible;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+}

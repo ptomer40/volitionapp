@@ -1,0 +1,87 @@
+.corporate-training-container {
+  padding: 3rem 1.5rem;
+  background: #f8fafc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.corporate-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.corporate-header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.corporate-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.corporate-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.highlight {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.highlight img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.highlight h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.highlight p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e0f7ef;
+  border-radius: 10px;
+}
+
+.cta-section h2 {
+  font-size: 1.8rem;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #10b981;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0f9c6e;
+}

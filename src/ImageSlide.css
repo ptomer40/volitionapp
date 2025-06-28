@@ -1,0 +1,104 @@
+﻿.image-slide-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: auto; /* Auto height to adjust according to the image height */
+}
+
+.carousel-image {
+    width: 100%;
+    object-fit: contain; /* Ensures the image fits within the container without distortion */
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+    .carousel-caption h3 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption .btn {
+        margin-top: 10px;
+    }
+
+/* Media queries for fine-tuning on different devices */
+@media (max-width: 768px) {
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        bottom: 10%;
+    }
+
+        .carousel-caption h3 {
+            font-size: 1.2rem;
+        }
+
+        .carousel-caption .btn {
+            font-size: 0.8rem;
+        }
+}
+
+.custom-caption {
+    position: absolute;
+    top: 70%; /* Adjust the top value to position the button vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the button */
+    text-align: center;
+}
+
+.custom-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* Remove unnecessary margins/paddings for rows in general */
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+    .no-gutters > .col,
+    .no-gutters > [class*='col-'] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+/* Additional styling to ensure the images are fully visible on mobile devices */
+@media (max-width: 768px) {
+    .image-slide-container {
+        padding-top: 56px; /* Ensure there's enough space for the header */
+    }
+
+    .carousel-caption {
+        bottom: 15%;
+        top: auto;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 576px) {
+    .image-slide-container {
+        padding-top: 56px; /* Ensure there's enough space for the header */
+    }
+
+    .carousel-caption {
+        bottom: 10%;
+        top: auto;
+        transform: translateX(-50%);
+    }
+}

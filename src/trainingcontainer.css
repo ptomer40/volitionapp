@@ -1,0 +1,158 @@
+﻿.trainingcontainer {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.course-section {
+  position: relative;
+  margin-top: 30px;
+}
+
+.scroll-area {
+  display: flex;
+  overflow-x: auto;
+  padding: 0 40px;
+  gap: 24px;
+  scroll-behavior: smooth;
+}
+
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
+
+.modern-card {
+  flex: 0 0 calc(25% - 24px); /* 4 cards visible at a time */
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  min-width: 260px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-4px);
+}
+
+.modern-card-img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.modern-card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.modern-card-content h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+  flex-grow: 1;
+}
+
+.languages {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.icon {
+  stroke: #666;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-outline,
+.btn-filled {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.btn-filled {
+  background-color: #3ddc84;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #3ddc84;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-filled:hover {
+  background-color: #2cbf73;
+}
+
+.scroll-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.scroll-buttons button {
+  font-size: 16px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.scroll-buttons button:hover {
+  background-color: #3ddc84;
+  color: white;
+}
+
+
+.explore-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.explore-btn {
+  padding: 12px 32px;
+  border: 2px solid #3ddc84;
+  background-color: #fff;
+  color: #3ddc84;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #3ddc84;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
