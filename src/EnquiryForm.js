@@ -21,7 +21,11 @@ const EnquiryForm = () => {
         console.log("Inside DataSend");
         console.log(phoneNumber);
     
-
+       if(phoneNumber==null ||  phoneNumber==""){
+          alert("enter mobile number");
+          return;
+       }
+       
         const response = await fetch("http://localhost:3001/send-otp", {
             method: 'post',
             headers: {
@@ -55,10 +59,14 @@ const EnquiryForm = () => {
 
     return (
         <div>
-            <h2>Enquiry Form</h2>
+            
             <div>
                 <label>Phone Number:</label>
-                <input type="text" value={phoneNumber} onChange={handlePhoneNumberChange} />
+                <input type="text" value={phoneNumber} onChange={handlePhoneNumberChange} required
+  maxLength={10}
+  pattern="[0-9]{10}"
+  title="Please enter a valid 10-digit mobile number"
+/>
             </div>
             {!otpSent && (
                 <button onClick={sendOtp}>Send OTP</button>
@@ -67,7 +75,7 @@ const EnquiryForm = () => {
                 <div>
                     <div>
                         <label>Enter OTP:</label>
-                        <input type="text" value={otp} onChange={handleOtpChange} />
+                        <input type="text" value={otp} onChange={handleOtpChange} required />
                     </div>
                     <button onClick={verifyOtp}>Verify OTP</button>
                 </div>

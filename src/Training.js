@@ -81,14 +81,7 @@ function Training() {
                   </svg>
                   Tamil, English, Hindi & Telugu
                 </p>
-                <div className="card-actions">
-                  <Link to={course.syllabus}>
-                    <button className="btn-outline">Syllabus</button>
-                  </Link>
-                  <Link to={course.more}>
-                    <a className="btn-filled">Know More</a>
-                  </Link>
-                </div>
+               
               </div>
             </div>
           ))}

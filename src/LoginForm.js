@@ -1,27 +1,39 @@
-// LoginForm.js
 import React from 'react';
-import './LoginForm.css'; // Keep your CSS
+import { Container, Row, Col } from 'react-bootstrap';
+import './LoginForm.css';
+import loginImage from './images/globe.gif'; // Replace with your image
 
-function LoginForm({ onClose }) {
+function LoginForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic
+    // Handle login logic here
   };
 
   return (
-    <div className="loginFormContainer">
-      <form className="loginForm" onSubmit={handleSubmit}>
-        <h2>Login</h2>
-        <label htmlFor="username">Username:</label>
-        <input type="text" id="username" name="username" required />
+    <Container fluid className="login-page">
+      <Row className="vh-100">
+        {/* Left column with image */}
+        <Col md={6} className="login-image d-none d-md-flex align-items-center justify-content-center">
+          <img src={loginImage} alt="Login Visual" className="img-fluid" />
+        </Col>
 
-        <label htmlFor="password">Password:</label>
-        <input type="password" id="password" name="password" required />
+        {/* Right column with form */}
+        <Col md={6} className="d-flex align-items-center justify-content-center">
+          <div className="loginFormContainer">
+            <form className="loginForm" onSubmit={handleSubmit}>
+              <h2>Login</h2>
+              <label htmlFor="username">Username:</label>
+              <input type="text" id="username" name="username" required />
 
-        <button type="submit">Submit</button>
-        <button type="button" onClick={onClose} className="close-btn">Close</button>
-      </form>
-    </div>
+              <label htmlFor="password">Password:</label>
+              <input type="password" id="password" name="password" required />
+
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

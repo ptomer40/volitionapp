@@ -15,7 +15,7 @@ function Footer() {
                             <br />
                             Ghaziabad, Delhi NCR, India
                             <br />
-                            Phone: +91-7428191397
+                            Phone: +91-7428191397, 0120-3264832
                             <br />
                             Email: info@volitionsphereitservices.net
                         </address>
