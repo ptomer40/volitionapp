@@ -1,11 +1,17 @@
 import React from 'react';
 import './corporateTraining.css';
+import ContactForm from './ContactForm';
+import { useState } from 'react';
 
 function CorporateTraining() {
+   const [isModalOpen, setIsModalOpen] = useState(false);
+   const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <section className="corporate-training-container">
       <header className="corporate-header">
-        <h1>Corporate Training at CodeStack</h1>
+        <h1>Corporate Training at Volitionsphere IT Services</h1>
         <p>Empowering your team with tailor-made tech training.</p>
       </header>
 
@@ -36,9 +42,19 @@ function CorporateTraining() {
       </div>
 
       <div className="cta-section">
-        <h2>Let’s Build a Smarter Workforce Together</h2>
-        <p>Partner with CodeStack to upskill your employees and future-proof your company.</p>
-        <a href="/contact" className="btn-primary">Request a Demo</a>
+        <h2>Let’s Start Coding... </h2>
+        <p>Partner with Volitionsphere IT Services to upskill your employees and future-proof your company.</p>
+      <button className="btn-primary" onClick={openModal}>
+        Request a Demo
+      </button>
+        {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <button className="close-btn" onClick={closeModal}>X</button>
+            <ContactForm />
+          </div>
+        </div>
+      )}
       </div>
     </section>
   );

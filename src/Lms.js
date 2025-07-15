@@ -1,91 +1,65 @@
 import React from 'react';
 import './lms.css';
-
+import fusionstack from './images/fusionstack.jpeg'
 const features = [
   {
-    title: 'CodeKata',
-    image: 'https://via.placeholder.com/1020x594?text=CodeKata',
+    title: 'FusionStack',
+    image: fusionstack,
     description: [
       'Interactive platform for programming practice.',
-      '1500+ coding problems curated by top industry experts.',
-      'Showcase skills for job recruitment.',
-      'Crack coding interviews effectively.',
+      '100+ coding problems curated by top industry experts.',
+      'Showcase your skills for placement.',
+      'Crack coding interviews efficiently.',
     ],
-    link: '/code-kata',
+    link: '/fusionstack',
   },
   {
-    title: 'WebKata',
-    image: 'https://via.placeholder.com/1020x594?text=WebKata',
+    title: 'fusionstackforreact',
+    image: fusionstack,
     description: [
       'Beginner-friendly web development practice.',
-      'Modern HTML, CSS, JavaScript problem sets.',
+      'Modern react assessment',
       'Hands-on assignments to accelerate skills.',
     ],
-    link: '/webkata',
+    link: '/fusionstack',
   },
   {
-    title: 'SQLKata',
-    image: 'https://via.placeholder.com/1020x594?text=SQLKata',
+    title: 'SQLusingfusionstack',
+    image: fusionstack,
     description: [
       'Master SQL and relational databases.',
       'Improve query writing and optimization.',
       'Tackle real-world data management challenges.',
     ],
-    link: '/sqlkata',
+    link: '/fusionstack',
   },
-  {
-    title: 'Debugging',
-    image: 'https://via.placeholder.com/1020x594?text=Debugging',
-    description: [
-      'Curated debugging exercises.',
-      'Performance affects job recommendations.',
-      'Sharpen real-time error solving.',
-    ],
-    link: '/debugging',
-  },
+ 
   {
     title: 'IDE',
-    image: 'https://via.placeholder.com/1020x594?text=IDE',
+    image: fusionstack,
     description: [
-      'CodeStack IDE for 20+ programming languages.',
+      'CodeStack IDE for 10+ programming languages.',
       'Write, test, debug all in one place.',
       'Built-in debugger and execution tools.',
     ],
     link: '/ide',
   },
-  {
-    title: 'Rewards',
-    image: 'https://via.placeholder.com/1020x594?text=Rewards',
-    description: [
-      'Earn points via coding and referrals.',
-      'Redeem rewards like vouchers and gadgets.',
-    ],
-    link: '/rewards',
-  },
-  {
-    title: 'Referral',
-    image: 'https://via.placeholder.com/1020x594?text=Referral',
-    description: [
-      'Simple referral system for learners.',
-      'Earn points for every successful invite.',
-    ],
-    link: '/referral',
-  },
+  
   {
     title: 'Forum',
-    image: 'https://via.placeholder.com/1020x594?text=Forum',
+    image: fusionstack,
     description: [
       'Tech community discussions and support.',
       'Queries answered within 48 hours.',
     ],
-    link: 'https://forum.codestack.in/',
+    link: '',
   },
 ];
 
 function Lms() {
   return (
     <div className="lms-container">
-      <h2 className="lms-title">Learn. Practice. Earn. Have Fun! — with CodeStack 🚀</h2>
+      <h2 className="lms-title">Learn. Practice. Have Fun! — with FusionStack 🚀</h2>
 
       {/* Mobile Accordion View */}
       <div className="lms-mobile">

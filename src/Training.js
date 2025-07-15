@@ -1,12 +1,14 @@
-﻿import './trainingcontainer.css';
-import { Link } from 'react-router-dom';
-import { useRef } from 'react';
+﻿import './trainingcontainer.css'; 
+import { useRef, useState } from 'react';
 import frankfinn from './images/image.png';
 import springboot from './images/springboot.png';
 import mern from './images/image.png';
+import TrainingEnquiryForm from './TrainingEnquiryForm'; // Import the form
 
 function Training() {
   const scrollRef = useRef(null);
+  const [showForm, setShowForm] = useState(false);
+  const [selectedSyllabus, setSelectedSyllabus] = useState('');
 
   const scroll = (offset) => {
     scrollRef.current.scrollLeft += offset;
@@ -15,35 +17,41 @@ function Training() {
   const courses = [
     {
       img: frankfinn,
-      title: 'Java Full Stack Training',
-      syllabus: '/syllabus/java-fullstack',
+      title:'Java Full Stack Training',
+      syllabus:'JavaFsd.pdf',
       more: '/training/java-fullstack'
     },
     {
       img: springboot,
       title: 'Springboot and Microservices',
-      syllabus: '/syllabus/java-fullstack',
-      more: '/training/java-fullstack'
+      syllabus:'springmicroservices.pdf',
+      more: '/trainings/java-fullstack'
     },
     {
       img: mern,
       title: 'MERN Stack Training',
-      syllabus: '/syllabus/java-fullstack',
+      syllabus:'Mernstack.pdf',
       more: '/training/java-fullstack'
     },
     {
       img: frankfinn,
-      title: 'Advanced Java & Hibernate',
-      syllabus: '/syllabus/advanced-java',
+      title: 'OOPs using java 8',
+      syllabus:'OOPs using Java 8.pdf',
       more: '/training/advanced-java'
     },
     {
       img: springboot,
-      title: 'Spring Security & JWT',
-      syllabus: '/syllabus/spring-security',
+      title: 'PL/SQL',
+      syllabus:'plsql.pdf',
       more: '/training/spring-security'
     },
   ];
+
+ const handleDownloadClick = (syllabusPath) => {
+  const fileName = syllabusPath.split('/').pop(); // Extract just the file name
+  setSelectedSyllabus(fileName);
+  setShowForm(true);
+};
 
   return (
     <div className="trainingcontainer" id="training-section">
@@ -62,26 +70,12 @@ function Training() {
               />
               <div className="modern-card-content">
                 <h3>{course.title}</h3>
-                <p className="languages">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="icon"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M2 12h20" />
-                    <path d="M12 2a15.3 15.3 0 0 1 0 20" />
-                  </svg>
-                  Tamil, English, Hindi & Telugu
-                </p>
-               
+                <button
+                  className="download-btn"
+                  onClick={() => handleDownloadClick(course.syllabus)}
+                >
+                  Download Syllabus
+                </button>
               </div>
             </div>
           ))}
@@ -92,15 +86,24 @@ function Training() {
           <button onClick={() => scroll(300)}>&#9654;</button>
         </div>
       </div>
-    <div className="explore-btn-wrapper">
-  <a
-    href="/zen-class/"
-    className="explore-btn"
-  >
-    Explore All Programs
-  </a>
-</div>
 
+    {showForm && (
+  <div className="modal-overlay">
+    <div className="modal-content">
+      <TrainingEnquiryForm
+        syllabusPath={selectedSyllabus}
+        onClose={() => setShowForm(false)}
+      />
+    </div>
+  </div>
+)}
+
+
+      <div className="explore-btn-wrapper">
+        <a href="/zen-class/" className="explore-btn">
+          Explore All Programs
+        </a>
+      </div>
     </div>
   );
 }
